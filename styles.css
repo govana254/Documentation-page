@@ -1,5 +1,5 @@
 html,body{
-    color: rgb(247, 252, 252);
+    color: rgb(236, 241, 158);
     background-color: rgb(33, 39, 37);
     font-size:  1.1rem;
     min-width:290px ;
@@ -9,7 +9,7 @@ html,body{
     position: fixed;
     top: 0px;
     left: 0px;
-    color: rgb(236, 236, 234);
+    color: rgb(1, 26, 16);
     border-right: solid;
     background-color: rgb(50, 56, 56);
     height:100%;
@@ -30,6 +30,9 @@ html,body{
     position: relative;
     list-style: none;
     background-color:rgb(50, 56, 56);
+}
+#navbar li a {
+    color: rgb(120, 241, 195);
 }
 #navbar header{
     background-color:rgb(50, 56, 56); ;
