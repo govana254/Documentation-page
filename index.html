@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>C++ Documentation</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header>C++ Documentation</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#What_you_should_already_know">What you should already know</a></li>
+            <li><a class="nav-link" href="#C++">C++</a></li>
+            <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+            <li><a class="nav-link" href="#Valiables">Valiables</a></li>
+            <li><a class="nav-link" href="#Constants">Constants</a></li>
+            <li><a class="nav-link" href="#Data_types">Data types</a></li>
+            <li><a class="nav-link" href="#Reference">Reference</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <p>C++ is a high-performance programming language that is widely used in the development of computer software, including operating systems, video games, and simulations. </p>
+        <p>It is an extension of the C programming language, which was developed in the 1970s by Dennis Ritchie. C++ adds object-oriented programming capabilities to C, making it a more powerful and versatile language.</p>
+        </section>
+        <section class="main-section" id="What_you_should_already_know">
+        <header>What you should already know</header>
+        <p>To learn C++, you will need to have a basic understanding of programming concepts and some experience with a programming language such as C or Python. You will also need a development environment such as Visual Studio or Xcode, and a good text editor or integrated development environment (IDE) to write, run, and debug your code. </p>
+        <p>There are many resources available online for learning C++, including tutorials, books, and online courses. With time and practice, you will be able to write efficient and effective C++ code for a wide range of applications.</p>
+        </section>
+        <section class="main-section" id="C++">
+        <header>C++</header>
+        <p>C++ is a general-purpose programming language that was developed in the early 1980s by Bjarne Stroustrup at Bell Labs. C++ is an extension of the C programming language and is considered to be an intermediate-level language, as it has both high-level and low-level features. C++ is widely used for developing operating systems, games, simulations, and other high-performance applications.</p>
+        <p>One of the main features of C++ is its support for object-oriented programming (OOP), which allows developers to create objects (instances of a class) that have their own properties and methods. C++ also supports other programming paradigms such as procedural, generic, and functional programming.</p>
+            <p>C++ is a compiled language, which means that the code is translated into machine code before it is executed. This makes C++ programs generally faster and more efficient than interpreted languages such as Python or JavaScript. C++ is also a cross-platform language, which means that it can be used to write code that runs on different operating systems and hardware architectures.</p>
+        <p>C++ is a powerful and versatile language and has a rich standard library that provides a wide range of features for input/output, string manipulation, and other common programming tasks. However, it is also a complex language and requires a solid understanding of programming concepts and a good understanding of pointers, memory management, and other low-level features of C++.</p>
+        </section>
+        <section class="main-section" id="Hello_world">
+        <header>Hello world</header>
+        <p> A simple way to get started is to write a "Hello, World!" program,this done by writting the following code: </p>
+        <code>
+        #include <iostream>
+        int main() {
+            std::cout << "Hello World!";
+            return 0;
+        }
+        </code>
+        <p>This program simply prints the string "Hello, World!" to the console.</p>
+        </section>
+        <section class="main-section" id="Valiables">
+        <header>Valiables</header>
+        <p>In C++, a variable is a named location in memory that stores a value. Variables are used to store data that can be manipulated by the program, and they have a specific data type that determines the type of value that can be stored in them.</p>
+        <p>There are several basic data types in C++, including:</p>
+        <ul>
+            <li>int (integer): stores whole numbers, such as -1, 0, and 1.</li>
+            <li>char (character): stores a single character, such as 'a' or '$'.</li>
+            <li>float (floating point): stores decimal numbers, such as 3.14 or -0.01.</li>
+            <li>double (double precision floating point): stores larger decimal numbers with more precision than float.</li>
+            <li>bool (boolean): stores true or false values.</li>
+        </ul>
+        <p>To declare a variable in C++, you use the keyword for the data type, followed by the name of the variable. For example:</p>
+            <code>
+                int age;
+                char grade;
+                float price;
+                double pi;
+                bool isStudent;
+            </code>
+        <p>After you've declared a variable, you can assign a value to it using the assignment operator (=). For example:
+        </p>
+            <code>
+                age = 25;
+                grade = 'A';
+                price = 19.99;
+                pi = 3.14159265358979323846;
+                isStudent = true;
+            </code>
+        <p>You can also declare and initialize a variable in one line, like so:</p>
+    <code>
+        int age = 25;
+        char grade = 'A';
+        float price = 19.99;
+        double pi = 3.14159265358979323846;
+        bool isStudent = true;
+    </code>
+        <p>It's important to note that variables in C++ can be assigned different values during the execution of the program and that the variable's type can't be changed after it's been declared.</p>
+        </section>
+        <section class="main-section" id="Constants">
+            <header>Constants</header>
+            <p>In C++, a constant is a value that cannot be changed during the execution of a program. Constants are declared using the keyword "const" before the data type. For example:</p>
+            <code>
+                const int MAX_AGE = 100;
+                const double PI = 3.14159265358979323846;
+                const char NEWLINE = '\n';
+            </code>
+            <p>Once a constant is declared, its value cannot be changed. Attempting to do so will result in a compile-time error. Constants are often used to define values that will remain constant throughout the execution of the program, such as mathematical constants or maximum limits.</p>
+                <p>It's worth noting that constants can also be declared using the '#define' preprocessor directive, but it's not considered best practice. The 'const' keyword is more flexible and type-safe than '#define'.</p>
+                <p>Additionally, you can use the 'constexpr' keyword to declare a variable that can be evaluated at compile-time, this is useful when the value of the variable can be known at compile-time, and the program will be more efficient.</p>
+                <p>In summary, constants are an important feature in C++ that helps to make your code more robust and readable by clearly defining values that should not be changed, and by providing an easy way to refer to those values throughout the code.</p>
+        </section>
+        <section class="main-section" id="Data_types">
+            <header>Data types</header>
+            <p>C++ has several built-in data types that can be used to store different types of data. The most basic data types include:</p>
+            <ul>
+                <li>nt (integer): stores whole numbers, such as -1, 0, and 1.</li>
+                <li>char (character): stores a single character, such as 'a' or '$'.</li>
+                <li>float (floating point): stores decimal numbers, such as 3.14 or -0.01.
+                </li>
+                <li>double (double precision floating point): stores larger decimal numbers with more precision than float.
+                </li>
+                <li>bool (boolean): stores true or false values.
+                </li>
+            </ul>
+            <p>C++ also includes other data types such as:</p>
+            <ul>
+                <li>void: used to indicate that a function does not return any value.
+                </li>
+                <li>wchar_t: used to store wide characters, which are characters that are represented by more than one byte.
+                </li>
+                <li>short and long: used to store smaller or larger integers than int.
+                </li>
+                <li>unsigned: used to store only non-negative integers.
+                </li>
+            </ul>
+            <p>C++ also allows you to define your own data types using classes and structures. Classes are user-defined data types that can include member variables and member functions, which allow you to create objects that have their own properties and methods. Structures are similar to classes, but have all members public by default.
+            </p>
+            <p>Additionally, C++11 introduces new data types such as 'auto', 'decltype' and 'nullptr' .
+            </p>
+            <p>It's important to choose the correct data type for your variables and constants to ensure that the program works correctly and uses memory efficiently.
+            </p>
+        </section>
+        <section class="main-section" id="Reference">
+            <header>Reference</header>
+            <ul>
+                <li>All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/WebAssembly/C_to_wasm" target="_blank">MDN</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

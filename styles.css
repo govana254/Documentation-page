@@ -1,0 +1,118 @@
+html,body{
+    color: rgb(247, 252, 252);
+    background-color: rgb(33, 39, 37);
+    font-size:  1.1rem;
+    min-width:290px ;
+    font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#navbar{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    color: rgb(236, 236, 234);
+    border-right: solid;
+    background-color: rgb(50, 56, 56);
+    height:100%;
+    width: 280px;
+    min-width: 250px;
+}
+#navbar ul{
+    height: 88%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    color: black;
+}
+#navbar li{
+    width:100%;
+    border-top: 1px solid;
+    color: rgb(7, 7, 7);
+    position: relative;
+    list-style: none;
+    background-color:rgb(50, 56, 56);
+}
+#navbar header{
+    background-color:rgb(50, 56, 56); ;
+}
+#navbar a{
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    padding: 20px 30px;
+    color: aliceblue;
+}
+header{
+    color: rgb(215, 243, 115);
+    font-size: 1.5rem;
+    margin-left: 10px;
+    padding: 10px 15px;
+}
+#main-doc{
+    position:absolute;
+    margin-left: 280px;
+}
+p{
+    margin-left: 25px;
+    word-spacing: 2px;
+    letter-spacing: 1.7px;
+    padding: 2px 2px;
+}
+code{
+    background-color:rgb(63, 49, 49) ;
+    display: block;
+    text-align: left;
+    word-break: normal;
+    word-wrap: normal;
+    border-radius: 5px;
+    white-space:pre-line ;
+    padding: 15px 15px ;
+    position: relative;
+    margin-left: 40px;
+    width: 60vw;
+}
+.main-section li{
+    margin: 15px 35px;
+}
+@media only screen and (max-width: 815px) {
+    /* For mobile phones: */
+    #navbar ul {
+        border: 1px solid;
+        height: 207px;
+    }
+    #navbar {
+        background-color: white;
+        position: absolute;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-height: 275px;
+        border: none;
+        z-index: 1;
+        border-bottom: 2px solid;
+    }
+    #main-doc {
+        position: relative;
+        margin-left: 0px;
+        margin-top: 270px;
+    }
+    }
+    @media only screen and (max-width: 400px) {
+        #main-doc {
+            margin-left: -10px;
+        }
+        code {
+            margin-left: -5px;
+            padding: 15px;
+            padding-left: 10px;
+            padding-right: 45px;
+        }
+        }
+        @media only screen and (max-width: 600px) {
+            body{
+                overflow-x: hidden;
+            }
+            code{
+                margin-left: 35px;
+            }
+        }
